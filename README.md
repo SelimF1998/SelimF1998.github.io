@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio — Vue 3, Tailwind CSS v4, Vite. English / German, light / dark mode.
+Live at https://selimf1998.github.io — personal portfolio, Vue 3, Tailwind CSS v4, Vite. English / German, light / dark mode.
 
 ```bash
 npm install
@@ -24,3 +24,5 @@ Twitter tags, JSON-LD `Person` data, `sitemap.xml` and `robots.txt`.
 
 Set your real domain in `siteUrl` (or build with `SITE_URL=https://example.com npm run build`) — it is used
 for all absolute URLs. Deploy `dist/` to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages).
+
+Pushing to `main` builds and deploys the site through `.github/workflows/deploy.yml`.
