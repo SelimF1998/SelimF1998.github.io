@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
