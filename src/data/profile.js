@@ -23,6 +23,20 @@ export const skillGroups = [
   { id: 'design', items: ['Figma', 'Jira', 'Slack'] },
 ]
 
+// Shown in the collapsed Skills view; the rest appear when expanded.
+export const featuredSkills = [
+  'TypeScript',
+  'React',
+  'Vue',
+  'Angular',
+  'Tailwind CSS',
+  'Java (Spring)',
+  'Node.js',
+  'C# (.NET)',
+  'PostgreSQL',
+  'Docker',
+]
+
 // level: a key of skills.levels in src/i18n (translated), or shown as-is (e.g. 'A2').
 export const spokenLanguages = [
   { id: 'en', level: 'fluent' },

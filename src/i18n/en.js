@@ -54,6 +54,9 @@ export default {
     spokenTitle: 'Languages',
     spoken: { en: 'English', fr: 'French', de: 'German' },
     levels: { fluent: 'Fluent' },
+    showAll: 'Show all',
+    showLess: 'Show less',
+    more: (n) => `+${n} more`,
   },
   experience: {
     title: 'Experience',

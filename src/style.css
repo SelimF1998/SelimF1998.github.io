@@ -21,3 +21,41 @@
     display: none;
   }
 }
+
+/*
+ * <Transition name="swap">: cross-fade between two views stacked in a relative container.
+ * The leaving view lifts and blurs out on top; children with .stagger (and --i) of the
+ * entering view rise in from below, unblurring one after another.
+ */
+.swap-leave-active {
+  position: absolute;
+  inset: 0 0 auto;
+  transition:
+    opacity 160ms ease-in,
+    transform 160ms ease-in,
+    filter 160ms ease-in;
+}
+.swap-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+  filter: blur(4px);
+}
+.swap-enter-active .stagger {
+  transition:
+    opacity 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 360ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 35ms);
+}
+.swap-enter-from .stagger {
+  opacity: 0;
+  transform: translateY(8px);
+  filter: blur(6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swap-leave-active,
+  .swap-enter-active .stagger {
+    transition: none;
+  }
+}
