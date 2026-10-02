@@ -52,7 +52,7 @@ export const jobs = [
   {
     id: 'datahorizon',
     company: 'DataHorizon France',
-    logo: null,
+    logo: '/datahorizon_logo.jpg',
     stack: '.NET / Angular',
     start: '2023-03',
     end: '2023-10',
