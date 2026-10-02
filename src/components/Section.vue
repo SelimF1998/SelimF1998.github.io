@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <section :id="id" :aria-labelledby="`${id}-title`" class="border-t border-neutral-200 py-10 dark:border-neutral-800">
-    <div class="flex items-center justify-between gap-4">
+    <div data-section-header class="group/header flex items-center justify-between gap-4">
       <h2 :id="`${id}-title`" class="text-sm font-semibold">{{ title }}</h2>
       <slot name="action" />
     </div>

@@ -38,25 +38,35 @@ onMounted(() => {
   observer.observe(inner.value)
 })
 onBeforeUnmount(() => observer?.disconnect())
+
+// Collapsed: a click anywhere in the section expands it.
+// Expanded: only the header row (title + toggle button) collapses it, so clicking content doesn't.
+// The toggle button has no handler of its own; its click (mouse or keyboard) lands here.
+function onSectionClick(event) {
+  if (!open.value) open.value = true
+  else if (event.target.closest('[data-section-header]')) open.value = false
+}
 </script>
 
 <template>
-  <!-- While collapsed, a click anywhere in the section expands it (keyboard users have the buttons) -->
   <Section
     id="skills"
     :title="t.skills.title"
     class="group/skills"
-    :class="!open && 'cursor-pointer'"
-    @click="open = true"
+    :class="open ? '[&_[data-section-header]]:cursor-pointer' : 'cursor-pointer'"
+    @click="onSectionClick"
   >
     <template #action>
       <button
         type="button"
         class="inline-flex items-center gap-1 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
-        :class="!open && 'group-hover/skills:text-neutral-900 dark:group-hover/skills:text-neutral-100'"
+        :class="
+          open
+            ? 'group-hover/header:text-neutral-900 dark:group-hover/header:text-neutral-100'
+            : 'group-hover/skills:text-neutral-900 dark:group-hover/skills:text-neutral-100'
+        "
         :aria-expanded="open"
         aria-controls="skills-full"
-        @click.stop="open = !open"
       >
         {{ open ? t.skills.showLess : t.skills.showAll }}
         <Icon name="chevron-down" class="size-4 transition-transform duration-300" :class="open && 'rotate-180'" />
