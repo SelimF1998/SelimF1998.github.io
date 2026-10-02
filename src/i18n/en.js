@@ -58,7 +58,7 @@ export default {
     title: 'Experience',
     present: 'present',
     duration: (y, m) =>
-      [y && `${y} yr${y > 1 ? 's' : ''}`, m && `${m} mo${m > 1 ? 's' : ''}`].filter(Boolean).join(' '),
+      [y && `${y} year${y > 1 ? 's' : ''}`, m && `${m} month${m > 1 ? 's' : ''}`].filter(Boolean).join(' '),
     jobs: {
       kian: {
         role: 'Fullstack Developer',
