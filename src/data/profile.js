@@ -82,14 +82,14 @@ export const projects = [
     id: 'nurburger',
     name: 'Nurburger',
     logo: '/projects/nurburger.svg',
-    repo: 'https://github.com/SelimF1998/nurburger',
+    repo: null,
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts', 'FastAPI', 'PostgreSQL', 'Redis'],
   },
   {
     id: 'carti',
     name: 'Carti',
     logo: '/projects/carti.svg',
-    repo: 'https://github.com/SelimF1998/react-task-tracker',
+    repo: null,
     tech: ['React', 'TypeScript', 'SCSS', 'Zustand', 'dnd-kit', 'FastAPI', 'PostgreSQL', 'WebSockets'],
   },
 ]
