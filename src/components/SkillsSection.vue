@@ -41,14 +41,22 @@ onBeforeUnmount(() => observer?.disconnect())
 </script>
 
 <template>
-  <Section id="skills" :title="t.skills.title">
+  <!-- While collapsed, a click anywhere in the section expands it (keyboard users have the buttons) -->
+  <Section
+    id="skills"
+    :title="t.skills.title"
+    class="group/skills"
+    :class="!open && 'cursor-pointer'"
+    @click="open = true"
+  >
     <template #action>
       <button
         type="button"
         class="inline-flex items-center gap-1 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+        :class="!open && 'group-hover/skills:text-neutral-900 dark:group-hover/skills:text-neutral-100'"
         :aria-expanded="open"
         aria-controls="skills-full"
-        @click="open = !open"
+        @click.stop="open = !open"
       >
         {{ open ? t.skills.showLess : t.skills.showAll }}
         <Icon name="chevron-down" class="size-4 transition-transform duration-300" :class="open && 'rotate-180'" />
@@ -66,8 +74,7 @@ onBeforeUnmount(() => observer?.disconnect())
             <li class="stagger" :style="{ '--i': featuredSkills.length }">
               <button
                 type="button"
-                class="rounded-full px-2.5 py-0.5 text-xs text-neutral-500 ring-1 ring-neutral-200 ring-inset hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:ring-neutral-800 dark:hover:bg-neutral-800 dark:hover:text-neutral-100"
-                @click="open = true"
+                class="rounded-full px-2.5 py-0.5 text-xs text-neutral-500 ring-1 ring-neutral-200 ring-inset group-hover/skills:bg-neutral-100 group-hover/skills:text-neutral-900 dark:text-neutral-400 dark:ring-neutral-800 dark:group-hover/skills:bg-neutral-800 dark:group-hover/skills:text-neutral-100"
               >
                 {{ t.skills.more(hiddenCount) }}
               </button>
