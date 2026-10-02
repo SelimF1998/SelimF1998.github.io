@@ -49,6 +49,24 @@ export const jobs = [
     end: '2024-06',
     tech: ['TypeScript', 'React', 'Node.js', 'Storybook', 'Tailwind', 'Azure DevOps', 'Docker', 'Git'],
   },
+  {
+    id: 'datahorizon',
+    company: 'DataHorizon France',
+    logo: null,
+    stack: '.NET / Angular',
+    start: '2023-03',
+    end: '2023-10',
+    tech: ['TypeScript', 'Angular', 'C#', '.NET', 'Azure DevOps', 'Git'],
+  },
+  {
+    id: 'hippo',
+    company: 'Hippo Labs, Inc',
+    logo: '/hippo.svg',
+    stack: 'Node.js / React',
+    start: '2022-08',
+    end: '2023-01',
+    tech: ['Node.js', 'Express.js', 'JavaScript', 'React', 'PostgreSQL', 'Git'],
+  },
 ]
 
 // logo: square icon in /public; repo: GitHub URL (null hides the link).

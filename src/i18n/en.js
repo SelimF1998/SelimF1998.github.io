@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Salim Ferroukhi | Frontend Engineer',
+    title: 'Salim Ferroukhi | Software Engineer',
     description:
-      'Frontend engineer in Chemnitz, Germany. Angular, React, TypeScript and Java. M.Sc. student in Automotive Software Engineering at TU Chemnitz.',
+      'Software engineer in Chemnitz, Germany, focused on the frontend. Angular, React, TypeScript, Java and .NET. M.Sc. student in Automotive Software Engineering at TU Chemnitz.',
   },
   nav: {
     brand: 'Portfolio',
@@ -10,7 +10,7 @@ export default {
     theme: 'Toggle dark mode',
   },
   profile: {
-    role: 'Frontend Engineer',
+    role: 'Software Engineer',
     location: 'Chemnitz, Germany',
     labels: {
       location: 'Location',
@@ -23,11 +23,14 @@ export default {
   about: {
     title: 'About',
     paragraphs: [
-      'I’m a software engineer who mostly works on the frontend. For about two years I built web apps in Angular and React, including dashboards for an IoT platform and a component library built from Figma designs, with backend work in Java and Node.js along the way.',
+      'I’m a software engineer who mostly works on the frontend.',
+      'For about three years I built web apps in Angular and React, including dashboards for an IoT platform and a component library built from Figma designs, with backend work in Java and Node.js along the way.',
       'I’m now doing a Master’s in Automotive Software Engineering at TU Chemnitz. Outside of coursework I’m interested in AI, data science, automotive software and music technology.',
     ],
-    educationTitle: 'Education',
-    education: [
+  },
+  education: {
+    title: 'Education',
+    items: [
       {
         degree: 'M.Sc. Automotive Software Engineering',
         school: 'Chemnitz University of Technology',
@@ -68,13 +71,30 @@ export default {
       },
       calx: {
         role: 'Frontend Developer',
-        note: 'on behalf of KIAN Technology',
         location: 'Tunis, Tunisia',
         bullets: [
           'Built reusable UI components from Figma designs using React, Tailwind and Storybook.',
           'Improved platform performance through debugging, Git version control and CI/CD.',
           'Delivered features in Agile sprints with cross-functional teams.',
           'Developed backend services with Node.js: REST APIs and authentication.',
+        ],
+      },
+      datahorizon: {
+        role: 'Fullstack Developer',
+        location: 'Tunis, Tunisia',
+        bullets: [
+          'Built a web application for managing Microsoft 365 service statistics on Azure, including data visualization and reporting.',
+          'Developed a SharePoint alerts system to improve data security, integrating Microsoft APIs and Azure Functions.',
+          'Created dynamic Angular charts to visualize MFA usage and improve the platform’s security posture insights.',
+        ],
+      },
+      hippo: {
+        role: 'Fullstack Developer',
+        location: 'Florida, USA (Remote)',
+        bullets: [
+          'Designed and implemented a database migration process, improving data integrity and system scalability.',
+          'Developed and maintained performant fullstack features, ensuring high responsiveness and code quality.',
+          'Wrote and ran unit, integration and performance tests to keep the whole stack stable.',
         ],
       },
     },

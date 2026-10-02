@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Salim Ferroukhi | Frontend Engineer',
+    title: 'Salim Ferroukhi | Software Engineer',
     description:
-      'Frontend Engineer in Chemnitz. Angular, React, TypeScript und Java. Masterstudent Automotive Software Engineering an der TU Chemnitz.',
+      'Software Engineer in Chemnitz mit Schwerpunkt Frontend. Angular, React, TypeScript, Java und .NET. Masterstudent Automotive Software Engineering an der TU Chemnitz.',
   },
   nav: {
     brand: 'Portfolio',
@@ -10,7 +10,7 @@ export default {
     theme: 'Dunkelmodus umschalten',
   },
   profile: {
-    role: 'Frontend Engineer',
+    role: 'Software Engineer',
     location: 'Chemnitz, Deutschland',
     labels: {
       location: 'Standort',
@@ -23,11 +23,14 @@ export default {
   about: {
     title: 'Über mich',
     paragraphs: [
-      'Ich bin Softwareentwickler mit Schwerpunkt Frontend. Rund zwei Jahre lang habe ich Webanwendungen mit Angular und React entwickelt, unter anderem Dashboards für eine IoT-Plattform und eine Komponentenbibliothek auf Basis von Figma-Designs, dazu Backend-Arbeit mit Java und Node.js.',
+      'Ich bin Softwareentwickler mit Schwerpunkt Frontend.',
+      'Rund drei Jahre lang habe ich Webanwendungen mit Angular und React entwickelt, unter anderem Dashboards für eine IoT-Plattform und eine Komponentenbibliothek auf Basis von Figma-Designs, dazu Backend-Arbeit mit Java und Node.js.',
       'Derzeit studiere ich im Master Automotive Software Engineering an der TU Chemnitz. Darüber hinaus interessiere ich mich für KI, Data Science, Automotive-Software und Musiktechnologie.',
     ],
-    educationTitle: 'Ausbildung',
-    education: [
+  },
+  education: {
+    title: 'Ausbildung',
+    items: [
       {
         degree: 'M.Sc. Automotive Software Engineering',
         school: 'Technische Universität Chemnitz',
@@ -68,13 +71,30 @@ export default {
       },
       calx: {
         role: 'Frontend-Entwickler',
-        note: 'im Auftrag von KIAN Technology',
         location: 'Tunis, Tunesien',
         bullets: [
           'Entwicklung wiederverwendbarer UI-Komponenten auf Basis von Figma-Designs mit React, Tailwind und Storybook.',
           'Verbesserung der Plattform-Performance durch Debugging, Git-Versionskontrolle und CI/CD.',
           'Umsetzung von Features in agilen Sprints mit funktionsübergreifenden Teams.',
           'Entwicklung von Backend-Services mit Node.js: REST-APIs und Authentifizierung.',
+        ],
+      },
+      datahorizon: {
+        role: 'Fullstack-Entwickler',
+        location: 'Tunis, Tunesien',
+        bullets: [
+          'Entwicklung einer Webanwendung zur Verwaltung von Microsoft-365-Dienststatistiken auf Azure, inklusive Datenvisualisierung und Reporting.',
+          'Entwicklung eines SharePoint-Alert-Systems zur Verbesserung der Datensicherheit mit Microsoft-APIs und Azure Functions.',
+          'Erstellung dynamischer Angular-Diagramme zur Visualisierung der MFA-Nutzung und für bessere Einblicke in die Security Posture der Plattform.',
+        ],
+      },
+      hippo: {
+        role: 'Fullstack-Entwickler',
+        location: 'Florida, USA (Remote)',
+        bullets: [
+          'Konzeption und Umsetzung eines Datenbank-Migrationsprozesses, der Datenintegrität und Skalierbarkeit verbessert hat.',
+          'Entwicklung und Wartung performanter Fullstack-Features mit Fokus auf Reaktionsfähigkeit und Codequalität.',
+          'Schreiben und Ausführen von Unit-, Integrations- und Performancetests für die Stabilität des gesamten Stacks.',
         ],
       },
     },

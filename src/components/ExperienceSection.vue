@@ -42,7 +42,7 @@ const items = computed(() => {
           :logo="job.logo"
           :name="job.company"
           :title="job.role"
-          :subtitle="job.note ? `${job.company}, ${job.note}` : job.company"
+          :subtitle="job.company"
           :aside="job.period"
         >
           <p class="text-sm text-neutral-500 dark:text-neutral-400">
