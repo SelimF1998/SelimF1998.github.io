@@ -2,7 +2,7 @@ export default {
   meta: {
     title: 'Salim Ferroukhi | Software Engineer',
     description:
-      'Software engineer in Chemnitz, Germany, focused on the frontend. Angular, React, TypeScript, Java and .NET. M.Sc. student in Automotive Software Engineering at TU Chemnitz.',
+      'Software engineer in Chemnitz, Germany. React, Vue, Angular, TypeScript, Java and .NET. M.Sc. student in AM Software Engineering at TU Chemnitz.',
   },
   nav: {
     brand: 'Portfolio',
@@ -23,16 +23,16 @@ export default {
   about: {
     title: 'About',
     paragraphs: [
-      'I’m a software engineer, mostly proficient in frontend development.',
-      'For about three years I built web apps in Angular and React, including dashboards for an IoT platform and a component library built from Figma designs, with backend work in Java and Node.js along the way.',
-      'I’m now doing a Master’s in Automotive Software Engineering at TU Chemnitz. Outside of coursework I’m interested in AI, data science, automotive software and music technology.',
+      'I’m a software engineer, exceptionally proficient in frontend development.',
+      'Professionally, I’ve mostly built web apps in Angular and React, including dashboards for an IoT platform and a component library built from Figma designs, with backend work in Java and Node.js along the way.',
+      'After four years of professional experience, I’m now pursuing a Master’s in AM Software Engineering at TU Chemnitz in Germany, while continuing to build software and improving my German. Outside of coursework I’m interested in AI, data science and music technology.',
     ],
   },
   education: {
     title: 'Education',
     items: {
       tuc: {
-        degree: 'M.Sc. Automotive Software Engineering',
+        degree: 'M.Sc. AM Software Engineering',
         school: 'Chemnitz University of Technology',
         period: '2025 – present',
       },

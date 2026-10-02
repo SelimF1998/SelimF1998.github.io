@@ -3,10 +3,15 @@
 
 // Public URL the site is deployed to (used for canonical links, hreflang, sitemap, Open Graph).
 // Can be overridden at build time: SITE_URL=https://example.com npm run build
-export const siteUrl = 'https://selimf1998.github.io'
+export const siteUrl = 'https://selimf.com'
+
+// Microsoft Clarity project (clarity.ms/tag/<id>); null disables it.
+export const clarityId = 'yrgdq8fvbz'
 
 export const profile = {
   name: 'Salim Ferroukhi',
+  // Other spellings people search for; listed in the structured data so search engines link them to this page.
+  alternateNames: ['Mohamed Salim Ferroukhi', 'Selim Ferroukhi'],
   initials: 'SF',
   // 320×320 crop of assets-src/pfp.png
   photo: '/pfp.jpg',
@@ -57,7 +62,7 @@ export const jobs = [
     logo: '/kian.jpg',
     stack: 'Angular / Java',
     start: '2024-06',
-    end: '2025-09',
+    end: '2026-01',
     tech: ['TypeScript', 'Angular', 'GraphQL', 'Java (Spring)', 'Azure DevOps', 'Git'],
   },
   {
