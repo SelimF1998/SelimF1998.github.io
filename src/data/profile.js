@@ -17,16 +17,22 @@ export const profile = {
 }
 
 export const skillGroups = [
-  { id: 'frontend', items: ['TypeScript', 'JavaScript', 'Angular', 'React', 'HTML & CSS', 'Tailwind CSS', 'Storybook'] },
+  { id: 'frontend', items: ['TypeScript', 'JavaScript', 'React', 'Vue', 'Angular', 'Tailwind CSS', 'Storybook'] },
   { id: 'backend', items: ['Java (Spring)', 'Node.js', 'C# (.NET)', 'GraphQL', 'REST APIs', 'PostgreSQL'] },
   { id: 'devops', items: ['Docker', 'Azure DevOps', 'CI/CD', 'Git', 'GitHub'] },
-  { id: 'design', items: ['Figma', 'Jira', 'Trello', 'Miro', 'Slack'] },
+  { id: 'design', items: ['Figma', 'Jira', 'Slack'] },
 ]
 
+// level: a key of skills.levels in src/i18n (translated), or shown as-is (e.g. 'A2').
 export const spokenLanguages = [
-  { id: 'en', level: 'B2', cert: 'IELTS 6.0' },
-  { id: 'fr', level: 'C1', cert: 'TCF 517' },
+  { id: 'en', level: 'fluent' },
+  { id: 'fr', level: 'fluent' },
   { id: 'de', level: 'A2' },
+]
+
+export const education = [
+  { id: 'tuc', logo: '/technische_universitat_chemnitz_logo.jpg' },
+  { id: 'enicar', logo: '/enicar.jpg' },
 ]
 
 // logo: path to an image in /public; null shows a placeholder.

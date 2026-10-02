@@ -23,25 +23,25 @@ export default {
   about: {
     title: 'About',
     paragraphs: [
-      'I’m a software engineer who mostly works on the frontend.',
+      'I’m a software engineer, mostly proficient in frontend development.',
       'For about three years I built web apps in Angular and React, including dashboards for an IoT platform and a component library built from Figma designs, with backend work in Java and Node.js along the way.',
       'I’m now doing a Master’s in Automotive Software Engineering at TU Chemnitz. Outside of coursework I’m interested in AI, data science, automotive software and music technology.',
     ],
   },
   education: {
     title: 'Education',
-    items: [
-      {
+    items: {
+      tuc: {
         degree: 'M.Sc. Automotive Software Engineering',
         school: 'Chemnitz University of Technology',
         period: '2025 – present',
       },
-      {
+      enicar: {
         degree: 'Software Engineering Degree',
         school: 'National Engineering School of Carthage (ENICAR)',
         period: '2020 – 2023',
       },
-    ],
+    },
   },
   skills: {
     title: 'Skills',
@@ -53,6 +53,7 @@ export default {
     },
     spokenTitle: 'Languages',
     spoken: { en: 'English', fr: 'French', de: 'German' },
+    levels: { fluent: 'Fluent' },
   },
   experience: {
     title: 'Experience',

@@ -23,25 +23,25 @@ export default {
   about: {
     title: 'Über mich',
     paragraphs: [
-      'Ich bin Softwareentwickler mit Schwerpunkt Frontend.',
+      'Ich bin Softwareentwickler und vor allem in der Frontend-Entwicklung versiert.',
       'Rund drei Jahre lang habe ich Webanwendungen mit Angular und React entwickelt, unter anderem Dashboards für eine IoT-Plattform und eine Komponentenbibliothek auf Basis von Figma-Designs, dazu Backend-Arbeit mit Java und Node.js.',
       'Derzeit studiere ich im Master Automotive Software Engineering an der TU Chemnitz. Darüber hinaus interessiere ich mich für KI, Data Science, Automotive-Software und Musiktechnologie.',
     ],
   },
   education: {
     title: 'Ausbildung',
-    items: [
-      {
+    items: {
+      tuc: {
         degree: 'M.Sc. Automotive Software Engineering',
         school: 'Technische Universität Chemnitz',
         period: '2025 – heute',
       },
-      {
+      enicar: {
         degree: 'Ingenieurdiplom Softwaretechnik',
         school: 'National Engineering School of Carthage (ENICAR)',
         period: '2020 – 2023',
       },
-    ],
+    },
   },
   skills: {
     title: 'Kenntnisse',
@@ -53,6 +53,7 @@ export default {
     },
     spokenTitle: 'Sprachen',
     spoken: { en: 'Englisch', fr: 'Französisch', de: 'Deutsch' },
+    levels: { fluent: 'Fließend' },
   },
   experience: {
     title: 'Berufserfahrung',
