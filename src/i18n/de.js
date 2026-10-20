@@ -65,7 +65,7 @@ export default {
       [y && `${y} Jahr${y > 1 ? 'e' : ''}`, m && `${m} Monat${m > 1 ? 'e' : ''}`].filter(Boolean).join(' '),
     jobs: {
       kian: {
-        role: 'Fullstack-Entwickler',
+        role: 'Fullstack Engineer',
         location: 'Tunis, Tunesien',
         bullets: [
           'Aufbau einer IoT-Plattform für Echtzeit-Monitoring, Datenvisualisierung und Geräteverwaltung in vernetzten Netzwerken.',
@@ -74,7 +74,7 @@ export default {
         ],
       },
       calx: {
-        role: 'Frontend-Entwickler',
+        role: 'Frontend Engineer',
         location: 'Tunis, Tunesien',
         bullets: [
           'Entwicklung wiederverwendbarer UI-Komponenten auf Basis von Figma-Designs mit React, Tailwind und Storybook.',

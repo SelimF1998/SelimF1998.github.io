@@ -65,7 +65,7 @@ export default {
       [y && `${y} year${y > 1 ? 's' : ''}`, m && `${m} month${m > 1 ? 's' : ''}`].filter(Boolean).join(' '),
     jobs: {
       kian: {
-        role: 'Fullstack Developer',
+        role: 'Fullstack Engineer',
         location: 'Tunis, Tunisia',
         bullets: [
           'Built an IoT platform for real-time monitoring, data visualization and device management across connected networks.',
@@ -74,7 +74,7 @@ export default {
         ],
       },
       calx: {
-        role: 'Frontend Developer',
+        role: 'Frontend Engineer',
         location: 'Tunis, Tunisia',
         bullets: [
           'Built reusable UI components from Figma designs using React, Tailwind and Storybook.',
